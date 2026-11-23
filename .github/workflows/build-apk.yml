@@ -28,7 +28,6 @@ jobs:
 
       - name: Accept Android SDK licenses
         run: |
-          set -o pipefail
           yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses
 
       - name: Install Android SDK packages
