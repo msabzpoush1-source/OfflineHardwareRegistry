@@ -1,0 +1,114 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f2f5f9;
+    color: #263445;
+    direction: rtl;
+}
+
+.app-header {
+    background: #17365d;
+    color: white;
+    text-align: center;
+    padding: 28px 16px;
+}
+
+.app-header h1 {
+    margin: 0 0 10px;
+    font-size: 23px;
+}
+
+.app-header p {
+    margin: 0;
+    color: #dce8f5;
+    font-size: 14px;
+}
+
+main {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 16px;
+}
+
+.welcome {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0000000d;
+}
+
+.welcome h2 {
+    color: #17365d;
+    margin-top: 0;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 22px 12px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px #0000000d;
+}
+
+.stat-card span {
+    display: block;
+    color: #65758a;
+    margin-bottom: 12px;
+}
+
+.stat-card strong {
+    font-size: 28px;
+    color: #17365d;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+button {
+    border: none;
+    border-radius: 9px;
+    padding: 16px 10px;
+    background: #245b91;
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:active {
+    background: #17365d;
+}
+
+#appStatus {
+    text-align: center;
+    color: #64748b;
+    margin-top: 25px;
+}
+
+footer {
+    text-align: center;
+    color: #7b8794;
+    font-size: 12px;
+    padding: 20px;
+}
+
+@media (max-width: 480px) {
+    .actions {
+        grid-template-columns: 1fr;
+    }
+}
