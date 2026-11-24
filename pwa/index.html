@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17365d">
+    <meta name="description" content="سامانه آفلاین ثبت تجهیزات سخت‌افزاری">
+    <title>ثبت تجهیزات سخت‌افزاری</title>
+
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>ثبت تجهیزات سخت‌افزاری</h1>
+        <p>سامانه آفلاین مدیریت دستگاه‌ها و قطعات</p>
+    </header>
+
+    <main id="app">
+        <section class="welcome">
+            <h2>به سامانه خوش آمدید</h2>
+            <p>اطلاعات تجهیزات را ثبت و به‌صورت آفلاین مدیریت کنید.</p>
+        </section>
+
+        <section class="dashboard">
+            <div class="stat-card">
+                <span>تعداد دستگاه‌ها</span>
+                <strong id="deviceCount">۰</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>قطعات فعال</span>
+                <strong id="componentCount">۰</strong>
+            </div>
+        </section>
+
+        <section class="actions">
+            <button id="newDeviceBtn">ثبت دستگاه جدید</button>
+            <button id="deviceListBtn">فهرست دستگاه‌ها</button>
+            <button id="draftsBtn">پیش‌نویس‌ها</button>
+            <button id="exportBtn">تهیه خروجی ZIP</button>
+            <button id="settingsBtn">تنظیمات</button>
+        </section>
+
+        <p id="appStatus" role="status">برنامه آماده راه‌اندازی است.</p>
+    </main>
+
+    <footer>
+        <p>نسخه ۱.۰ - ثبت آفلاین تجهیزات سخت‌افزاری</p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
