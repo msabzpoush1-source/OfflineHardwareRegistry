@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_NAME = "hardware-registry-v2";
+const CACHE_NAME = "hardware-registry-v3";
 const APP_PREFIX = "hardware-registry-";
 
 const APP_FILES = [
@@ -9,7 +9,8 @@ const APP_FILES = [
   "./styles.css",
   "./app.js",
   "./manifest.webmanifest",
-  "./icon.svg"
+  "./icon-192.png",
+  "./icon-512.png"
 ];
 
 self.addEventListener("install", event => {
